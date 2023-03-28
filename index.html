@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
     <title>JS Hatchet Throwing</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -13,13 +16,14 @@
     <div>
         <h1>Throw a hatchet!</h1>
         <div id="reset-container">
+            <img src="assets/images/target.png" alt="Hatchet Target">
             <button id="reset-button">RESET</button><br>
             NUMBER OF RESETS: <span id="num-resets">0</span>
         </div>
         <div class="clear"></div>
         <div class="left">
             <h2>
-                Team 1
+                Thrower 1
             </h2>
             <div class="goals">
                 THROWS: <span id="teamone-numthrows">0</span><br>
@@ -31,7 +35,7 @@
         </div>
         <div class="right">
             <h2>
-                Team 2
+                Thrower 2
             </h2>
             <div class="goals">
                 THROWS: <span id="teamtwo-numthrows">0</span><br>
@@ -42,8 +46,9 @@
             </div>
         </div>
         <div class="clear"></div>
+        <div id="winner"></div>
     </div>
-<script src="./assets/javascript/game.js"></script>
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>

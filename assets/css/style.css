@@ -1,19 +1,34 @@
+body {
+    font-family: 'Rye', cursive;
+}
+
 .hide {
     display: none;
 }
 
 .left {
-    float: left;
+    float: inline-start;
+    padding: 5em;
+    text-align: center;
 }
 
 .right {
-    float: right;
+    float: inline-end;
+    padding: 5em;
+    text-align: center;
 }
 
 .clear {
     clear: both;
 }
 
-#reset-container, h1 {
+h1 {
     text-align: center;
+    padding: 1em;
+    font-size: 4rem;
 }
+
+#reset-container {
+    text-align: center;
+    /* padding: 2em; */
+} 
