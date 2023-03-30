@@ -1,3 +1,5 @@
+// fix this garbage later
+
 // Get references to the HTML elements
 const teamOneThrowsEl = document.getElementById("teamone-numthrows");
 const teamOneHitsEl = document.getElementById("teamone-numhits");

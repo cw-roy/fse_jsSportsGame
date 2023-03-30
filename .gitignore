@@ -1,6 +1,6 @@
 # Custom items here
-
-
+*.png
+*.mp3
 
 # Logs
 logs
