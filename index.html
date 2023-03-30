@@ -14,16 +14,44 @@
 
 <body>
     <div>
-        <h1>Coming soon...Throw a hatchet!</h1>
+        <h1>Throw a hatchet!</h1>
         <div id="reset-container">
             <img src="assets/images/target.png" alt="Hatchet Target" id="image1">
             <img src="assets/images/target_hit.png" alt="Hatchet Target Hit" id="image2" class="hide">
-            <button id="reset-button">What's this?</button><br>
-            <!-- NUMBER OF RESETS: <span id="num-resets">0</span> -->
+            <button id="reset-button">RESET</button><br>
+            NUMBER OF RESETS: <span id="num-resets">0</span>
         </div>
 
+        <div class="clear"></div>
+        <div class="left">
+            <h2>
+                Thrower 1
+            </h2>
+            <div class="goals">
+                THROWS: <span id="teamone-numthrows">0</span><br>
+                HITS: <span id="teamone-numhits">0</span>
+            </div>
+            <div>
+                <button id="teamone-throw-button">THROW</button>
+            </div>
+        </div>
+        <div class="right">
+            <h2>
+                Thrower 2
+            </h2>
+            <div class="goals">
+                THROWS: <span id="teamtwo-numthrows">0</span><br>
+                HITS: <span id="teamtwo-numhits">0</span>
+            </div>
+            <div>
+                <button id="teamtwo-throw-button">THROW</button>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="winner"></div>
+    </div>
     <script src="./assets/javascript/main.js"></script>
-    <!-- <script src="./assets/javascript/game.js"></script> -->
+    <script src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
