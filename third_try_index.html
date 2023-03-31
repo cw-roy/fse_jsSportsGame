@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,14 +10,14 @@
     <title>JS Hatchet Throwing</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-
 <body>
     <div>
         <h1>Throw a hatchet!</h1>
-        <!-- <h2>Comment line</h2> -->
         <div id="reset-container">
-            <img src="assets/images/target.png" alt="Hatchet Target" id="image1">
-            <img src="assets/images/target_hit.png" alt="Hatchet Target Hit" id="image2" class="hide">
+            <div id="target-container">
+                <img id="target-image" src="./assets/images/target.png" alt="Hatchet Target">
+                <img id="hit-image" src="./assets/images/target_hit.png" alt="Hatchet Target Hit" class="hide">
+            </div>
             <button id="reset-button">RESET</button><br>
             NUMBER OF RESETS: <span id="num-resets">0</span>
         </div>
@@ -54,5 +53,4 @@
     <script src="./assets/javascript/main.js"></script>
     <script src="./assets/javascript/newgame.js"></script>
 </body>
-
 </html>
