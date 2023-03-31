@@ -23,8 +23,8 @@ body {
 }
 
 img {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
     max-width: 100%;
     display: block;
     margin: 0 auto;
@@ -35,6 +35,10 @@ img {
 
 .hide {
     display: none;
+}
+
+.show {
+    display: block;
 }
 
 div.left {
@@ -48,7 +52,6 @@ div.right {
     float: inline-end;
     padding-top: 1em;
     padding-right: 5em;
-    /* margin-right: 5em; */
     text-align: center;
 }
 
@@ -62,6 +65,17 @@ h1 {
     font-size: 4rem;
 }
 
+#target-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* #target-image, #hit-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
 #reset-container {
     text-align: center;
     padding: 1em;
@@ -73,10 +87,16 @@ h1 {
 #reset-button {
     margin-top: 1em;
 
+#winner {
+    text-align: center;
+    padding: 1em;
+    
+}
+
 }
 
 button {
     font-size: 1.2em;
     border-radius: 20%;
-    padding: 10px 10px;
+    padding: 5px 5px;
 }
