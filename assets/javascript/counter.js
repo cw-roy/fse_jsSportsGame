@@ -1,4 +1,3 @@
-// Another try at the js code
 let clickCount1 = 0;
 let randomCount1 = 0;
 let clickCount2 = 0;
@@ -39,17 +38,17 @@ function resetCounts() {
   document.getElementById("randomCount2-el").textContent = randomCount2;
   document.getElementById("resetCount-el").textContent = resetCount;
 
+
   let message;
   if (randomCount1Prev > randomCount2Prev) {
-    message = "Click Counter 1 had a higher random count than Click Counter 2.";
+    message = "Thrower 1 wins!";
   } else if (randomCount2Prev > randomCount1Prev) {
-    message = "Click Counter 2 had a higher random count than Click Counter 1.";
+    message = "Thrower 2 wins!";
   } else {
-    message = "Click Counter 1 and Click Counter 2 had the same random count.";
+    message = "It's a tie!";
   }
   alert(message);
 }
-
 
 document.getElementById("myButton").addEventListener("click", incrementCounts1);
 document.getElementById("myButton2").addEventListener("click", incrementCounts2);
