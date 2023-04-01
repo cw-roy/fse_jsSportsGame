@@ -11,6 +11,15 @@ function incrementCounts1() {
   const randomNum = Math.floor(Math.random() * 2);
   randomCount1 += randomNum;
   document.getElementById("randomCount1-el").textContent = randomCount1;
+
+  if (randomNum === 1) {
+    const targetHit = document.querySelector(".target-hit");
+    targetHit.classList.add("flip");
+
+    setTimeout(() => {
+      targetHit.classList.remove("flip");
+    }, 500);
+  }
 }
 
 function incrementCounts2() {
@@ -20,6 +29,15 @@ function incrementCounts2() {
   const randomNum = Math.floor(Math.random() * 2);
   randomCount2 += randomNum;
   document.getElementById("randomCount2-el").textContent = randomCount2;
+
+  if (randomNum === 1) {
+    const targetHit = document.querySelector(".target-hit");
+    targetHit.classList.add("flip");
+
+    setTimeout(() => {
+      targetHit.classList.remove("flip");
+    }, 500);
+  }
 }
 
 function resetCounts() {
