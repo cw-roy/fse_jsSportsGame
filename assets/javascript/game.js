@@ -1,3 +1,5 @@
+//test2 script
+
 let clickCount1 = 0;
 let randomCount1 = 0;
 let clickCount2 = 0;
@@ -12,13 +14,19 @@ function incrementCounts1() {
   randomCount1 += randomNum;
   document.getElementById("randomCount1-el").textContent = randomCount1;
 
-  if (randomNum === 1) {
-    const targetHit = document.querySelector(".target-hit");
-    targetHit.classList.add("flip");
+  const targetNoHit = document.querySelector(".target-nohit");
+  const targetHit = document.querySelector(".target-hit");
 
+  if (randomNum === 1) {
+    targetNoHit.classList.add("hide");
+    targetHit.classList.remove("hide");
     setTimeout(() => {
-      targetHit.classList.remove("flip");
+      targetNoHit.classList.remove("hide");
+      targetHit.classList.add("hide");
     }, 500);
+  } else {
+    targetNoHit.classList.remove("hide");
+    targetHit.classList.add("hide");
   }
 }
 
@@ -30,13 +38,19 @@ function incrementCounts2() {
   randomCount2 += randomNum;
   document.getElementById("randomCount2-el").textContent = randomCount2;
 
-  if (randomNum === 1) {
-    const targetHit = document.querySelector(".target-hit");
-    targetHit.classList.add("flip");
+  const targetNoHit = document.querySelector(".target-nohit");
+  const targetHit = document.querySelector(".target-hit");
 
+  if (randomNum === 1) {
+    targetNoHit.classList.add("hide");
+    targetHit.classList.remove("hide");
     setTimeout(() => {
-      targetHit.classList.remove("flip");
+      targetHit.classList.add("hide");
+      targetNoHit.classList.remove("hide");
     }, 500);
+  } else {
+    targetNoHit.classList.remove("hide");
+    targetHit.classList.add("hide");
   }
 }
 

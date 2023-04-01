@@ -10,7 +10,7 @@ body {
 }
 
 .hide {
-    display: none;
+    visibility: hidden;
 }
 
 .left {
@@ -57,30 +57,12 @@ button {
     height: 200px;
     text-align: center;
     margin: 0 auto;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
 }
 
 .target>div {
     width: 100%;
     height: 100%;
     position: absolute;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: transform 0.5s;
-}
-
-.target-nohit,
-.target-hit {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-.target-nohit {
-    transform: rotateY(0deg);
-}
-
-.target-hit {
-    transform: rotateY(180deg);
 }
