@@ -8,19 +8,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-    <title>JS Hatchet Throwing</title>
+    <title>Hatchet Throw</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <div>
-        <h1>Coming soon...Throw a hatchet!</h1>
+        <h1>Throw a hatchet!</h1>
 
         <div class="target-container">
             <div class="target">
-                <img src="./assets/images/target.png" alt="target">
+                <div class="target-hit">
+                    <img src="./assets/images/target_hit.png" alt="target-hit">
+                </div>
+                <div class="target-nohit">
+                    <img src="./assets/images/target.png" alt="target">
+                </div>
             </div>
         </div>
+
+        <div class="audio-container">
+            <audio id="hitSound">
+                <source src="./assets/sounds/hit.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio id="missSound">
+                <source src="./assets/sounds/miss.mp3" type="audio/mpeg">
+            </audio>
+
+            <audio id="throwSound">
+                <source src="./assets/sounds/throw.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+
+        <div id="reset-container">
+            <p>Click to reset</p>
+            <button id="resetButton">Reset</button>
+            <p>Reset count: <span id="resetCount-el">0</span></p>
+        </div>
+
+        <div class="clear"></div>
+
+        <div class="left">
+            <h2>Thrower 1</h2>
+            <p>Click to throw</p>
+            <button id="myButton">Throw!</button>
+            <p>Throw count: <span id="clickCount1-el">0</span></p>
+            <p>Hit count: <span id="randomCount1-el">0</span></p>
+        </div>
+
+
+        <div class="right">
+            <h2>Thrower 2</h2>
+            <p>Click to throw</p>
+            <button id="myButton2">Throw!</button>
+            <p>Throw count: <span id="clickCount2-el">0</span></p>
+            <p>Hit count: <span id="randomCount2-el">0</span></p>
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+    <script src="./assets/javascript/game.js"></script>
+
 </body>
 
 </html>
