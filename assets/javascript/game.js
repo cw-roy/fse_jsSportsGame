@@ -1,5 +1,3 @@
-//soundtest script
-
 let clickCount1 = 0;
 let randomCount1 = 0;
 let clickCount2 = 0;
